@@ -1,4 +1,4 @@
-async function binarySearch(arr, st) {
+function binarySearch(arr, st) {
 	arr.sort((a, b) => a - b);
 	let left = 0;
 	let right = arr.length - 1;
@@ -18,7 +18,7 @@ async function binarySearch(arr, st) {
 	return -1; // Search term not found
 }
 
-async function compareTest(arr, st) {
+function compareTest(arr, st) {
 	arr.sort((a, b) => a - b);
 	for (i in arr) {
 		if (arr[i] === st) {
